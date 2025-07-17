@@ -48,27 +48,27 @@ The goal is to identify which customers are most at risk of leaving and what fac
 - Competitor-related churn: 761 customers  
 - Attitude and dissatisfaction are also major churn reasons.
 
-🛠 Tools & Technologies
-Power BI – For data visualization and interactive dashboards
-Microsoft Excel / CSV – Used for data preprocessing
-DAX – For calculated measures and data transformation
+### 🛠 **Tools & Technologies**
+- Power BI – For data visualization and interactive dashboards
+- Microsoft Excel / CSV – Used for data preprocessing
+- DAX – For calculated measures and data transformation
 
-🚀 How to Use the Project
-Clone the repository or download the dashboard image.
-Use a relevant dataset (e.g., customer churn CSV or Excel).
-Import data into Power BI Desktop.
-Recreate visuals and filters to suit business use cases.
-Publish or share the report through Power BI Service (optional).
+### 🚀 **How to Use the Project**
+- Clone the repository or download the dashboard image.
+- Use a relevant dataset (e.g., customer churn CSV or Excel).
+- Import data into Power BI Desktop.
+- Recreate visuals and filters to suit business use cases.
+- Publish or share the report through Power BI Service (optional).
 
-📌 Business Use Cases
-Identify customer segments at high churn risk.
-Improve retention strategies through targeted offers.
-Reduce service cancellation rates with data-driven insights.
-Monitor churn trends by geography, age, and services used.
+### 📌 **Business Use Cases**
+- Identify customer segments at high churn risk.
+- Improve retention strategies through targeted offers.
+- Reduce service cancellation rates with data-driven insights.
+- Monitor churn trends by geography, age, and services used.
 
-📈 Future Enhancements
-Integrate churn prediction using machine learning (e.g., logistic regression or decision trees).
-Add filters for senior citizen status, tech support, and streaming services.
-Enable automatic data refresh using Power BI Service
+### 📈 **Future Enhancements**
+- Integrate churn prediction using machine learning (e.g., logistic regression or decision trees).
+- Add filters for senior citizen status, tech support, and streaming services.
+- Enable automatic data refresh using Power BI Service
 
 
