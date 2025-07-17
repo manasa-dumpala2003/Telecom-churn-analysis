@@ -48,12 +48,6 @@ The goal is to identify which customers are most at risk of leaving and what fac
 - Competitor-related churn: 761 customers  
 - Attitude and dissatisfaction are also major churn reasons.
 
-## 📂 Files in Repository
-
-```plaintext
-├── Telecom churn analysis.png   # Power BI dashboard image
-├── README.md                    # Project documentation
-
 🛠 Tools & Technologies
 Power BI – For data visualization and interactive dashboards
 Microsoft Excel / CSV – Used for data preprocessing
