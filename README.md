@@ -1,87 +1,80 @@
-📊 Telecom Customer Churn Analysis Dashboard
-This project presents an interactive Power BI dashboard that analyzes customer churn behavior in a telecom company. It provides key insights into churn patterns based on demographics, services used, geographic location, and account information. The goal is to identify churn drivers and suggest areas of improvement for customer retention strategies.
+ 📉 Telecom Customer Churn Analysis Dashboard
 
-🔍 Project Overview
-Customer churn is when a customer stops doing business with a company. This project aims to help telecom businesses understand the key reasons for customer churn and identify actionable patterns to reduce churn rates.
+This project presents an interactive Power BI dashboard that provides insights into customer churn behavior for a telecom company. The dashboard visualizes key patterns related to churn based on customer demographics, account information, services used, and geographical regions. 
 
-📌 Key Features
-Summary KPIs:
+The goal is to identify which customers are most at risk of leaving and what factors contribute to churn, thereby helping the business reduce churn and improve customer satisfaction.
 
-📈 Total Customers: 6,418
+![Telecom Churn Dashboard](https://github.com/manasa-dumpala2003/Telecom-churn-analysis/blob/main/Telecom%20churn%20analysis.png)
 
-🧍‍♂️ New Joiners: 411
+## 📊 Key Metrics (Summary)
 
-❌ Total Churned: 1,732
+- **Total Customers**: 6,418  
+- **New Joiners**: 411  
+- **Total Churned Customers**: 1,732  
+- **Overall Churn Rate**: 27.0%
 
-⚠️ Churn Rate: 27.0%
+## 📌 Dashboard Insights
 
-Demographic Insights:
+### 👥 **Demographics**
+- **Churn by Gender**:
+  - Female: 35.85%
+  - Male: 64.15%
+- **Churn by Age Group**:
+  - Highest churn rate (31%) among customers aged >50.
 
-Gender-based churn comparison
+### 💼 **Account Info**
+- **Churn by Contract Type**:
+  - Month-to-Month: 46.5% (highest churn)
+  - One Year: 11.0%
+  - Two Year: 2.7%
+- **Churn by Payment Method**:
+  - Mailed Check: 37.8%
+  - Credit Card: 14.8%
 
-Age group analysis and churn trends
+### 🌍 **Geography**
+- **States with Highest Churn**:
+  - Jammu: 57.2%
+  - Assam: 38.1%
+  - Jharkhand: 34.5%
 
-Account Information:
+### 🌐 **Services Used**
+- **Churn by Internet Type**:
+  - Fiber Optic: 41.1%
+  - DSL: 19.4%
+  -  **Churn by Optional Services**:
+  - High churn with Online Backup (31.06%), Device Protection Plan (28.98%), and Phone Services (10.59%)
 
-Churn rate by contract type (Month-to-month, One-year, Two-year)
+### 📦 **Churn Distribution by Category**
+- Competitor-related churn: 761 customers  
+- Attitude and dissatisfaction are also major churn reasons.
 
-Tenure analysis and customer retention patterns
+## 📂 Files in Repository
 
-Payment method impact on churn
+```plaintext
+├── Telecom churn analysis.png   # Power BI dashboard image
+├── README.md                    # Project documentation
 
-Geographical Patterns:
+🛠 Tools & Technologies
+Power BI – For data visualization and interactive dashboards
+Microsoft Excel / CSV – Used for data preprocessing
+DAX – For calculated measures and data transformation
 
-State-wise churn analysis (e.g., Jammu has highest churn at 57.2%)
+🚀 How to Use the Project
+Clone the repository or download the dashboard image.
+Use a relevant dataset (e.g., customer churn CSV or Excel).
+Import data into Power BI Desktop.
+Recreate visuals and filters to suit business use cases.
+Publish or share the report through Power BI Service (optional).
 
-Service Usage Impact:
+📌 Business Use Cases
+Identify customer segments at high churn risk.
+Improve retention strategies through targeted offers.
+Reduce service cancellation rates with data-driven insights.
+Monitor churn trends by geography, age, and services used.
 
-Churn by internet type (e.g., Fiber Optic has 41.1% churn)
-
-Churn by services such as Online Backup, Streaming, Device Protection
-
-Churn Distribution by Reason:
-
-Top churn causes include Competition, Attitude, Dissatisfaction, and Price
-
-📈 Tools Used
-Power BI: For creating interactive dashboards and visualizations
-
-Microsoft Excel / CSV: For preparing and importing datasets
-
-Data Modeling: Relationships, calculated fields, and DAX measures
-
-💡 Insights & Observations
-Customers on Month-to-Month contracts are more likely to churn (46.5% churn rate).
-
-Device Protection Plan and Online Backup services show high churn among users.
-
-Long-term customers (>24 months) have higher churn rates (27.5%) — indicating possible dissatisfaction over time.
-
-Geographical location plays a major role; e.g., churn is highest in Jammu.
-
-Streaming and phone services also show high churn influence.
-
-🚀 How to Use
-Open Power BI Desktop.
-
-Load the provided dataset.
-
-Build visuals using demographic, service, and account features.
-
-Apply filters (e.g., Monthly Charge Range, Marital Status) to explore churn patterns.
-
-Publish the dashboard to Power BI service (optional) for sharing or collaboration.
-
-📌 Use Cases
-Telecom companies can identify at-risk customers and launch targeted retention campaigns.
-
-Insights can be used for product improvement, better customer support, and pricing strategies.
-
-✅ Future Improvements
-Add predictive modeling (e.g., logistic regression) to forecast churn.
-
-Include customer satisfaction scores and support ticket data.
-
-Automate dataset refresh using Power BI Service and scheduled flows.
+📈 Future Enhancements
+Integrate churn prediction using machine learning (e.g., logistic regression or decision trees).
+Add filters for senior citizen status, tech support, and streaming services.
+Enable automatic data refresh using Power BI Service
 
 
