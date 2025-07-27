@@ -1,74 +1,92 @@
- 📉 Telecom Customer Churn Analysis Dashboard
+# 📊 Telecom Customer Churn Analysis & Prediction  
 
-This project presents an interactive Power BI dashboard that provides insights into customer churn behavior for a telecom company. The dashboard visualizes key patterns related to churn based on customer demographics, account information, services used, and geographical regions. 
+## ✅ Overview  
+Customer churn is a critical challenge for telecom companies. Retaining existing customers is more cost-effective than acquiring new ones. This project uses **data analysis**, **machine learning prediction**, and **Power BI dashboards** to identify customers at risk of churning and provide actionable insights.  
 
-The goal is to identify which customers are most at risk of leaving and what factors contribute to churn, thereby helping the business reduce churn and improve customer satisfaction.
+---
 
-![Telecom Churn Dashboard](https://github.com/manasa-dumpala2003/Telecom-churn-analysis/blob/main/Telecom%20churn%20analysis.png)
+## ✅ Objectives  
+- Analyze key factors influencing customer churn.  
+- Build a predictive model to classify high-risk customers.  
+- Create interactive dashboards for decision-making.  
 
-## 📊 Key Metrics (Summary)
+---
 
-- **Total Customers**: 6,418  
-- **New Joiners**: 411  
-- **Total Churned Customers**: 1,732  
-- **Overall Churn Rate**: 27.0%
+## ✅ Tech Stack  
+- **Languages:** Python  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib  
+- **Visualization:** Power BI  
+- **Deployment (Optional):** Streamlit  
 
-## 📌 Dashboard Insights
+---
 
-### 👥 **Demographics**
-- **Churn by Gender**:
-  - Female: 35.85%
-  - Male: 64.15%
-- **Churn by Age Group**:
-  - Highest churn rate (31%) among customers aged >50.
+## ✅ Dataset  
+- **File:** `prediction_data.xlsx`  
+- **Sheets:**  
+  - `vw_churndata`: Historical churn data for model training.  
+  - `vw_joindata`: New customer data for churn prediction.  
+- **Target Variable:** `Customer_Status` (`Stayed` = 0, `Churned` = 1)  
 
-### 💼 **Account Info**
-- **Churn by Contract Type**:
-  - Month-to-Month: 46.5% (highest churn)
-  - One Year: 11.0%
-  - Two Year: 2.7%
-- **Churn by Payment Method**:
-  - Mailed Check: 37.8%
-  - Credit Card: 14.8%
+---
 
-### 🌍 **Geography**
-- **States with Highest Churn**:
-  - Jammu: 57.2%
-  - Assam: 38.1%
-  - Jharkhand: 34.5%
+## ✅ Methodology  
+### **1. Data Preprocessing**  
+- Removed unnecessary columns: `Customer_ID`, `Churn_Category`, `Churn_Reason`.  
+- Handled categorical variables using **Label Encoding**.  
+- Encoded target column (`Stayed` → 0, `Churned` → 1).  
 
-### 🌐 **Services Used**
-- **Churn by Internet Type**:
-  - Fiber Optic: 41.1%
-  - DSL: 19.4%
-  -  **Churn by Optional Services**:
-  - High churn with Online Backup (31.06%), Device Protection Plan (28.98%), and Phone Services (10.59%)
+### **2. Model Building**  
+- Algorithm: **Random Forest Classifier** (`n_estimators=100`).  
+- Train-Test Split: **80/20**.  
 
-### 📦 **Churn Distribution by Category**
-- Competitor-related churn: 761 customers  
-- Attitude and dissatisfaction are also major churn reasons.
+### **3. Evaluation Metrics**  
+- **Confusion Matrix**  
+- **Classification Report**: Precision, Recall, F1-score  
+- **Feature Importance Plot**  
 
-### 🛠 **Tools & Technologies**
-- Power BI – For data visualization and interactive dashboards
-- Microsoft Excel / CSV – Used for data preprocessing
-- DAX – For calculated measures and data transformation
+### **4. Prediction for New Data**  
+- Encoded new customer data using the same encoders.  
+- Predicted churn risk.  
+- Filtered customers predicted as **Churned** and saved to `prediction.csv`.  
 
-### 🚀 **How to Use the Project**
-- Clone the repository or download the dashboard image.
-- Use a relevant dataset (e.g., customer churn CSV or Excel).
-- Import data into Power BI Desktop.
-- Recreate visuals and filters to suit business use cases.
-- Publish or share the report through Power BI Service (optional).
+---
 
-### 📌 **Business Use Cases**
-- Identify customer segments at high churn risk.
-- Improve retention strategies through targeted offers.
-- Reduce service cancellation rates with data-driven insights.
-- Monitor churn trends by geography, age, and services used.
+## ✅ Dashboards  
 
-### 📈 **Future Enhancements**
-- Integrate churn prediction using machine learning (e.g., logistic regression or decision trees).
-- Add filters for senior citizen status, tech support, and streaming services.
-- Enable automatic data refresh using Power BI Service
+### **1. Churn Summary Dashboard**  
+Displays:  
+✔ Total Customers & Churn Rate  
+✔ Churn Rate by Gender, Age Group, Tenure  
+✔ Churn by Payment Method & Contract Type  
+✔ Services Impacting Churn (Internet Type, Streaming, Security)  
 
+**Preview:**  
+![Churn Summary](https://github.com/manasa-dumpala2003/Telecom-churn-analysis/blob/main/Telecom%20churn%20analysis.png)  
 
+---
+
+### **2. Churn Prediction Dashboard**  
+Displays:  
+✔ Predicted Customers at Risk (count)  
+✔ Distribution by Gender, State, Age, Tenure  
+✔ Contract Type & Payment Method for high-risk customers  
+✔ Detailed customer list with monthly charges, revenue, refunds  
+
+**Preview:**  
+![Churn Prediction](https://github.com/manasa-dumpala2003/Telecom-churn-analysis/blob/main/ChurnPrediction.png)  
+
+---
+
+**Model Performance**  
+Metric	Score
+Accuracy	84%
+Precision	81%
+Recall	79%
+F1-score	80%
+
+**Future Enhancement:**
+Deploy real-time prediction API.
+
+Automate Power BI dashboard refresh.
+
+Use advanced ML models like XGBoost and CatBoost.
