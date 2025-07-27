@@ -16,8 +16,7 @@ Customer churn is a critical challenge for telecom companies. Retaining existing
 - **Languages:** Python  
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Joblib  
 - **Visualization:** Power BI  
-- **Deployment (Optional):** Streamlit  
-
+  
 ---
 
 ## ✅ Dataset  
@@ -79,14 +78,12 @@ Displays:
 
 **Model Performance**  
 Metric	Score
-Accuracy	84%
-Precision	81%
-Recall	79%
-F1-score	80%
+- Accuracy	84%
+- Precision	81%
+- Recall	79%
+- F1-score	80%
 
 **Future Enhancement:**
-Deploy real-time prediction API.
-
-Automate Power BI dashboard refresh.
-
-Use advanced ML models like XGBoost and CatBoost.
+- Deploy real-time prediction API.
+- Automate Power BI dashboard refresh.
+- Use advanced ML models like XGBoost and CatBoost.
